@@ -1,0 +1,13 @@
+<div class="card shadow card-height mb-2">
+    <a class="card-link">
+      <div class="container-img">
+        <img src="{{cast.profile_path ? imageURL + cast.profile_path : imgDefault}}" class="card-img-top" />
+      </div>
+      <div class="card-body ">
+        <h5 class="card-title card-title__trail text-left">{{cast.name | descriptionReduced:18:0}}</h5>
+        <p class="card-text card-text__trail text-justify mb-0">{{cast.character| descriptionReduced:30:0}}</p>
+        <div class="mb-3 mt-2 text-right">
+        </div>
+      </div>
+    </a>
+  </div>

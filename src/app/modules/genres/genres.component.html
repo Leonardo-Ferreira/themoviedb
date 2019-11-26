@@ -1,0 +1,9 @@
+<div class="container">
+  <h4 class="dark-blue">Welcome to The Movie DB</h4>
+  <p class="green">Select a movie genre below and watch your movies.</p>
+  <div class="row justify-content-start">
+    <div *ngFor="let genre of genres; let idx = index" class="col-6 col-sm-4" style="width: 18rem;">
+      <app-card [genre]="genre" (movies)="selectMovie($event)"></app-card>
+    </div>
+  </div>
+</div>

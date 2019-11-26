@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row">
+    <ng-select class="w-100" (change)="onChange($event)" [items]="genres" [multiple]="true" bindLabel="name" bindValue="id" placeholder="Select one or more movie genres here"
+      [(ngModel)]="genresIdSelects">
+    </ng-select>
+  </div>
+</div>

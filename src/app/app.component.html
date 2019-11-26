@@ -1,0 +1,115 @@
+<!-- Fixed navbar -->
+<div class=" navbar-dark fixed-top bg-dark logo">
+    <img src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg"
+        alt="The Movie Database (TMDb)" width="81" height="72">
+    <ul class="fixed-top right-2 ">
+        <li>
+            <a class="active" href="#" [routerLink]="['/movies']" routerLinkActive="router-link-active">Movies </a>
+        </li>
+    </ul>
+</div>
+<div></div>
+<br>
+<br>
+<br>
+<br>
+
+<router-outlet>
+</router-outlet>
+
+<div></div>
+<footer class="bg-dark-footer" id="myFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="logo">
+                    <img src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg"
+                        alt="The Movie Database (TMDb)" width="150" height="100">
+                </h2>
+            </div>
+            <div class="col-sm-2">
+                <h5>THE BASICS</h5>
+                <ul>
+                    <li>
+                        <a href="#">About TMDB</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Support Forums</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>GET INVOLVED</h5>
+                <ul>
+                    <li>
+                        <a href="#">Contribution Bible</a>
+                    </li>
+                    <li>
+                        <a href="#">3rd Party Applications</a>
+                    </li>
+                    <li>
+                        <a href="#">Add New Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">Add New TV Show</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>COMMUNITY</h5>
+                <ul>
+                    <li>
+                        <a href="#">Guidelines</a>
+                    </li>
+                    <li>
+                        <a href="#">Leaderboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Forums</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>LEGAL</h5>
+                <ul>
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="social-networks">
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="google">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

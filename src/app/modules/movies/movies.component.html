@@ -1,0 +1,32 @@
+<div class="container">
+  <h2 class="dark-blue">Discover new movies and series:</h2>
+  <app-select-genres [genres]="genres" (idsGenres)="onChangeIdsGenres($event)"></app-select-genres>
+  <p class="mt-3"></p>
+  <div class="row">
+    <div class="col-sm-6" (click)="selectMovie(movie.id)" *ngFor="let movie of page.results | paginate: { itemsPerPage: 20, currentPage: page.page, totalItems: page.total_results }">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{baseURLImage}}{{movie.poster_path}}" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"> {{movie.title}}</h5>
+              <h5 class="card-title"> {{movie.runtime}}</h5>
+              <p class="card-text">{{movie.overview | descriptionReduced:167:0}}</p>
+
+            </div>
+            <div class="card-footer" (click)="selectMovie(movie.id)">
+              <small class="">More Info</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="page && page.results" class="col-lg-12 col-centered mt-3 d-flex justify-content-center">
+    <pagination-controls (pageChange)="pageChange($event)" directionLinks="true" autoHide="true" responsive="true" previousLabel="Anterior"
+      nextLabel="Próximo">
+    </pagination-controls>
+  </div>
+</div>

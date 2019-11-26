@@ -1,0 +1,16 @@
+img.card-img-top {
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 170px;
+}
+
+.card-body {
+  padding: 10px!important;
+}
+
+.card-height {
+  min-height: 325px;
+}
+

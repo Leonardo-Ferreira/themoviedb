@@ -1,0 +1,11 @@
+.green{color: green;}
+.card-text{
+    font-size: 13px !important;
+}
+.text-muted{
+    font-size: 18px;
+}
+
+.more-info {
+  cursor: pointer;
+}

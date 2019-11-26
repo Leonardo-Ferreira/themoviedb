@@ -1,0 +1,16 @@
+div {
+    padding: 5px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: green !important;
+    border-color:green !important;
+}
+.center{text-align: center;}
+.green{color: green;}
+.dark-blue{columns: #081c24!important;}
+.right-sub-title{
+    margin-left: 242px !important;
+    justify-content: space-between !important;
+ }

@@ -1,0 +1,38 @@
+<main>
+  <section>
+    <div class="container shadow-lg mb-3">
+      <div class="row justify-content-center">
+        <div>
+          <img class="img_poster" src="{{baseURLImage}}{{movie.poster_path}}">
+        </div>
+        <div class="col">
+          <h1>{{movie.title}}</h1>
+          <h4>Sinopse</h4>
+          <article>{{movie.overview}}</article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h2>Cast</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of credit.cast">
+              <app-card-cast [cast]="item"></app-card-cast>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4 grey_column shadow">
+        <h3>Info.</h3>
+        <p class="wrap"><strong>Título original</strong> {{movie.original_title}}</p>
+        <p class="wrap"><strong>Language original</strong> {{movie.original_language}}</p>
+        <p class="wrap"><strong>Run time</strong> {{movie.runtime}}</p>
+      </div>
+    </div>
+  </div>
+</main>
